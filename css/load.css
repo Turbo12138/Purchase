@@ -1,0 +1,85 @@
+body{margin: 0;padding: 0;}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    -moz-opacity: 0.4;
+    margin: 0;padding: 0;
+}
+.content{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 80%;
+    background:url("../images/caigouBac.gif") no-repeat center / 70%;
+    z-index: 1002;
+    background-size: cover;
+    background-position: center center;
+}
+.pos {
+    /*position: absolute;*/
+    position: fixed;
+    /* width: 50%; */
+    /* height: 100%; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+}
+.load-place {
+    width: 380px;
+    position: absolute;
+    background: #fff;
+    right: 50%;
+    margin-right: -180px;
+    top: 50%;
+    margin-top: -180px;
+    border: 1px solid #E6E6E6;
+}
+.load-place .chose{height: 75px;border-bottom: 4px solid #85C72F;width: 100%}
+.load-place .chose a{float: left;font-size: 18px;margin-top: 41px;margin-left: 47px;padding: 6px 33px;border-radius: 4px;text-decoration:none;}
+.load-place .chose a:hover{background: #85c730;color: #fff;}
+.load-place .chose .active{background: #85c730;color: #fff;}
+.load-place .input-box{line-height: 50px;width: 303px;margin: 0 auto;margin-top: 30px;height: 50px;border-radius: 8px;display: block;outline: none;border: 1px solid #E6E6E6;padding-left: 15px;font-size: 16px;}
+.load-place .margin-top{margin-top: 50px;}
+.load-place .subsidiary{margin-top: 5px;height: 60px;}
+.load-place .subsidiary .forget{float: right;font-size: 14px;margin-right: 31px;text-decoration:none;}
+.load-place .subsidiary .remember-me{float: left;font-size: 14px;margin-left: 38px;}
+.load-place .subsidiary .remember-me .rem{vertical-align:middle;margin-right: 8px;}
+.load-place .enter{text-decoration:none;line-height: 50px;width: 320px;margin: 0 auto;height: 50px;border-radius: 8px;display: block;background: #85c730;color: #fff;font-size: 16px;text-align: center;margin-bottom: 30px;}
+a,a:hover{color:#333;}
+a:active{text-decoration:none;}
+a:visited{text-decoration:none;}
+.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+
+.head{position: fixed;
+    z-index: 1005;
+    left: 15px;
+width: 100%;height: 10%; display: table;
+   }
+.head p{padding: 0;margin: 0;font-size: 20px;color: #000;display: table-cell;
+    text-align: left;
+    vertical-align: middle;}
+.footer{
+    width: 100%;height: 10%;
+    position: fixed;bottom: 0;
+    z-index: 1005;
+    text-align: center;
+    display: table;
+}
+
+html, body {height: 100%;}
+.footer p{display: table-cell;
+    text-align: center;
+    vertical-align: middle;font-size: 12px;color: #999999;padding: 0;margin: 0;}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/load.css">
+    <title></title>
+    <style>
+        .something-semantic {
+            display: table;
+            width: 100%;
+        }
+        .something-else-semantic {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #divcss5 h1, #divcss5 h2, #divcss5 p {margin:0 10px;
+            letter-spacing:1px;}
+        #divcss5 h1 {font-size:2.5em; color:#fff;}
+        #divcss5 h2 {font-size:2em;color:#06a; border:0;}
+        #divcss5 p {padding-bottom:0.5em;}
+        #divcss5 h2 {padding-top:0.5em;}
+        #divcss5 {background: transparent; margin:1em;}
+
+        /* divcss5提示 圆角样式 */
+        .xtop, .xbottom {display:block;
+            background:transparent; font-size:1px;}
+        .xb1, .xb2, .xb3, .xb4 {display:block; overflow:hidden;}
+        .xb1, .xb2, .xb3 {height:1px;}
+        .xb2, .xb3, .xb4 {background:#ccc; border-left:1px solid #08c;
+            border-right:1px solid #08c;}
+        .xb1 {margin:0 5px; background:#08c;}
+        .xb2 {margin:0 3px; border-width:0 2px;}
+        .xb3 {margin:0 2px;}
+        .xb4 {height:2px; margin:0 1px;}
+
+        .xboxcontent {display:block; background:#ccc;
+            border:0 solid #08c; border-width:0 1px;}
+        /* divcss5提示 圆角样式 结束 */
+    </style>
+</head>
+<body>
+<div class="something-semantic">
+    <div class="something-else-semantic">
+        Unknown stuff to be centered.
+    </div>
+
+
+</div>
+
+<div id="divcss5">
+    <b class="xtop">
+        <b class="xb1"></b>
+        <b class="xb2"></b>
+        <b class="xb3"></b>
+        <b class="xb4"></b>
+    </b>
+    <div class="xboxcontent">
+        <!-- 内容区，内容任意修改 添加 -->
+        <h1>纯CSS+DIV圆角案例</h1>
+        <p>纯DIV+CSS实现圆角效果<br />
+            http://www.divcss5.com/</p>
+        <!-- 内容区结束 -->
+    </div>
+    <b class="xbottom">
+        <b class="xb4"></b>
+        <b class="xb3"></b>
+        <b class="xb2"></b>
+        <b class="xb1"></b>
+    </b>
+</div>
+
+
+</body>
+</html>
+
+
+

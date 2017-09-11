@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Default.css">
+    <title></title>
+</head>
+<body>
+<div class="Default-top">
+    <div class="container f-cb">
+        <ul class="f-cb">
+            <li><img src="images/logo.png"></li>
+            <li class="distance">|</li>
+            <li>欢迎登录智订货</li>
+        </ul>
+        <div class="hot-line">
+            <p>咨询热线</p>
+            <p class="num">400-607-3011</p>
+        </div>
+    </div>
+</div>
+<div class="Default-main">
+    <div class="container f-cb">
+        <div class="pic-word">
+            <a id="loginLink" target="_blank" style="" href="#"></a>
+        </div>
+        <div class="pos">
+            <div class="load-place">
+                <div class="chose">
+                    <a href="#">企业端</a>
+                    <a href="#" class="active">客户端</a>
+                </div>
+                <input class="input-box margin-top" placeholder="输入用户名">
+                <input class="input-box" placeholder="输入密码">
+                <div class="subsidiary f-cb">
+                    <label class="remember-me"><input id="chk_rember" type="checkbox" class="rem"><span class="mar-l">记住我</span></label>
+                    <a href="javascript:;" class="forget">忘记密码？</a>
+                </div>
+                <a href="#" class="enter">登 录</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-container">
+        <p>
+            COPYRIGHT©2006-2016 石家庄宝智软件科技有限公司 冀ICP备15027423号-2&nbsp;&nbsp;
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1254399311'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254399311%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        </p>
+    </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".load-place .chose a").click(function(){
+            $(".load-place .chose a").removeClass("active");
+            $(this).addClass("active")
+        });
+        document.addEventListener("scroll", setPosition);
+        window.addEventListener("resize", setPosition);
+        function setPosition() {
+            var scroll_Left = document.body.scrollLeft;
+            $(".footer").css('left', ~scroll_Left + 1);
+            $(".Default-top").css('left', ~scroll_Left + 1);
+        }
+    })
+</script>
+</body>
+</html>
